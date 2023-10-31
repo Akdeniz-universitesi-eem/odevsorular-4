@@ -1,0 +1,57 @@
+/*
+1- Unit Test nedir? Neden Unit Test yaparız? Unit Test Frameworkları listeleyiniz. Unit Test için
+uyulması gereken kuralları belirƟniz.
+ 2- Design pattern nedir? Kaç tipi vardır her tipe 2 adet örnek veriniz?
+/*
+
+1.soru :Unit Test, yazılım geliştirme sürecinde kodun en küçük parçalarını (genellikle fonksiyonlar veya metotlar) izole bir şekilde test etme işlemidir. Bu testler, bu parçaların doğru çalışıp çalışmadığını kontrol eder ve hataları erken tespit etmeye yardımcı olur.
+
+Unit Test yapmamızın nedenleri:
+Hata Tespiti: Potansiyel hataları erken tespit ederek yazılımın daha güvenilir olmasını sağlar.
+
+Kod Kalitesi: Daha düzenli ve bakımı kolay kod yazmamıza yardımcı olur.
+
+Refaktoring Desteği: Kodu güvenle yeniden düzenlememizi ve iyileştirmemizi sağlar.
+
+Dokümantasyon: Unit testler, kodun beklendiği gibi nasıl çalışması gerektiğini belgelemeye yardımcı olur.
+
+Sürekli Entegrasyon: Sürekli entegrasyon süreçlerinde kullanılarak hızlı ve otomatik test edilebilirlik sağlar.
+
+Sonuç olarak, Unit Test, yazılımın kalitesini artırır, hataları azaltır ve geliştirme sürecini daha verimli hale getirir.
+
+Unit Test Frameworkları:
+
+JUnit (Java için)
+NUnit (.NET için)
+PyTest (Python için)
+Mocha (JavaScript için)
+RSpec (Ruby için)
+PHPUnit (PHP için)
+Unit Test Kuralları:
+
+Bağımsızlık ve Tekrarlanabilirlik: Her test bağımsız olmalı ve tekrarlanabilir olmalıdır.
+Beklenen ve Beklenmeyen Davranışların Testi: Hem olumlu (beklenen sonuçlar) hem de negatif (hata durumları) senaryolar test edilmelidir.
+Kolay Okunabilirlik: Testler anlaşılır olmalı ve test adları, test durumları açık bir şekilde belirtilmelidir.
+Performans: Testlerin hızlı ve verimli olması önemlidir, aksi halde geliştirme sürecini uzatabilirler.
+Sürekli Entegrasyon ve Sürekli Teslimat (CI/CD): Testlerin otomatikleştirilmesi ve sürekli entegrasyon süreçlerine entegre edilmesi, sürekli bir geliştirme sürecinde önemlidir.
+Bu kurallar, yazılım geliştirme sürecinde güvenilir ve etkili bir şekilde Unit Test yapmayı sağlar.
+
+2.soru:Tasarım desenleri, yazılım geliştirme sürecinde sıkça karşılaşılan problemlere yönelik genel çözüm şablonlarıdır. Üç ana kategoride incelenirler: Oluşturucu Desenler (nesnelerin oluşturulması), Yapısal Desenler (nesneler arasındaki ilişki ve yapılar), ve Davranışsal Desenler (nesnelerin davranışları). İşte her kategoride iki örnek:
+
+Oluşturucu Desenler:
+
+Singleton (Tekil Örnek): Bu desen, bir sınıfın yalnızca bir örneğini oluşturmasını ve bu örneğe genel bir erişim noktası sunmasını sağlar. Özellikle tek bir nesnenin paylaşılması gereken durumlarda kullanılır.
+Factory Method (Fabrika Metodu): Bu desen, nesnelerin oluşturulma sürecini alt sınıflara bırakarak, bir üst sınıfın nesne yaratma mantığını soyutlar. Bu sayede farklı alt sınıflar, nesneleri nasıl oluşturacaklarını belirleyebilirler.
+Yapısal Desenler:
+
+Adapter (Adaptör): Bu desen, farklı arayüzlere veya sınıf yapısına sahip nesnelerin birlikte çalışabilmesini sağlar. İki uyumsuz nesne arasındaki arayüz farkını giderir.
+Decorator (Dekoratör): Bu desen, bir nesneye dinamik olarak ek işlevsellik eklemeyi sağlar. Nesneleri değiştirmeden, onlara yeni davranışlar eklemek için kullanılır.
+Davranışsal Desenler:
+
+Observer (Gözlemci): Bu desen, nesneler arasında bir yayın/abone modeli kurarak, bir nesnenin durumunda değişiklik olduğunda bağımlı nesneleri otomatik olarak bilgilendirir. Bu şekilde nesneler arasındaki ilişki dinamik hale gelir.
+Strategy (Strateji): Bu desen, bir algoritmayı uygulayan sınıfları soyutlar ve bu sınıfları birbirinin yerine kullanılabilir hale getirir. Bu sayede aynı işlemi farklı stratejilerle gerçekleştirebilirsiniz.
+Bu desenler, yazılım geliştirme sürecinde karşılaşılan sorunlara yönelik test edilmiş ve tekrar kullanılabilir çözümler sunar. Bu nedenle, yazılım tasarımında kullanıldığında kodun daha modüler, okunaklı ve bakımı kolay hale gelmesine yardımcı olurlar.
+ */
+
+
+
