@@ -1,0 +1,36 @@
+/*
+ 4 basamaklı tek bir mükemmel sayı vardır. Yazmış olduğunuz isPerfect metodunu kullanarak 4
+basamaklı mükemmel sayıyı bulan programı yazınız
+ */
+public class PerfectFourDigitNumber {
+
+    public static boolean isPerfect(int number) {
+        int sum = 0;
+
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        return sum == number;
+    }
+
+    public static void main(String[] args) {
+        int min = 1000;
+        int max = 9999;
+        boolean foundPerfect = false;
+
+        for (int i = min; i <= max; i++) {
+            if (isPerfect(i)) {
+                System.out.println("4 basamaklı mükemmel sayı: " + i);
+                foundPerfect = true;
+                break;
+            }
+        }
+
+        if (!foundPerfect) {
+            System.out.println("4 basamaklı mükemmel sayı bulunamadı.");
+        }
+    }
+}
