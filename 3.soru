@@ -1,0 +1,29 @@
+/* Aşağıdaki tabloda herhangi bir programının şifre belirleme arayüzü verilmişƟr. Aşağıdaki
+koşulları yerine şifre oluşturulması sağlayan java programını yazınız. ( Not:
+jopƟonpane.showinputdialog yapılarını kullanabilirsiniz.) 
+*/
+import java.util.Random;
+
+public class SimplePasswordGenerator {
+
+    public static void main(String[] args) {
+        int passwordLength = 12; // Şifre uzunluğu
+
+        String password = generatePassword(passwordLength);
+
+        System.out.println("Oluşturulan Şifre: " + password);
+    }
+
+    public static String generatePassword(int length) {
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?";
+        StringBuilder password = new StringBuilder();
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(chars.length());
+            password.append(chars.charAt(index));
+        }
+
+        return password.toString();
+    }
+}
